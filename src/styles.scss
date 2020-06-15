@@ -1,1 +1,80 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@import url("https://use.typekit.net/iql7lwa.css");
+
+@include mat-core();
+
+$electro-primary: mat-palette($mat-indigo);
+$electro-accent: mat-palette($mat-pink, A200, A100, A400);
+$electro-warn: mat-palette($mat-red);
+
+$electro-theme: mat-light-theme($electro-primary, $electro-accent, $electro-warn);
+
+
+@include angular-material-theme($electro-theme);
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--main-bg-color);
+}
+
+:root {
+  --main-bg-color: white;
+  --main-txt-color: black;
+  --main-title-color: #63c2cd;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: century-gothic, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--main-title-color);
+}
+
+h2 {
+  font-size: 28px;
+  font-family: century-gothic, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--main-title-color);
+  margin: 100px 5%;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: century-gothic, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--main-title-color);
+  margin: 0;
+}
+
+h4 {
+  font-size: 16px;
+  font-family: gothic-light, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--main-title-color);
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 14px;
+  font-family: century-gothic, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--main-txt-color);
+}
+
+div {
+  font-size: 14px;
+  font-family: century-gothic, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--main-txt-color);
+}
+

@@ -1,0 +1,51 @@
+@import "src/styles";
+
+.header-container {
+  z-index: 1000;
+
+  .toolbar {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    background-color: var(--main-title-color);
+    border-bottom: 5px solid var(--main-bg-color);
+    z-index: 1000;
+
+    .electro_label {
+      height: 75px;
+      margin: 0 8px;
+    }
+
+    .navigation {
+      position: fixed;
+      right: 0;
+      margin: 0 8px;
+
+      a {
+        color: var(--main-bg-color);
+
+        .material-icons {
+          color: var(--main-bg-color);
+          padding-right: 10px;
+        }
+
+        &:hover {
+          color: deeppink;
+
+          .material-icons {
+            color: deeppink;
+          }
+        }
+
+        &.active {
+          color: var(--main-title-color);
+          background-color: #DAD4FF;
+
+          .material-icons {
+            color: var(--main-title-color);
+          }
+        }
+      }
+    }
+  }
+}

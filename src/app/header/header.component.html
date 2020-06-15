@@ -1,0 +1,33 @@
+<div class="header-background">
+  <div class="header-container">
+
+    <mat-toolbar class="toolbar">
+      <a routerLink="/home" routerLinkActive="active">
+        <img class="electro_label" src="../../assets/images/electro-logo.png">
+      </a>
+
+      <div class="navigation">
+        <a routerLink="/home" routerLinkActive="active" mat-button class="landing">
+          <i class="material-icons">home</i>
+          <span class="subtitle">Home</span>
+        </a>
+
+        <a routerLink="../produkte" routerLinkActive="active" mat-button class="product">
+          <i class="material-icons">bubble_chart</i>
+          <span class="subtitle">Produkte</span>
+        </a>
+
+        <a routerLink="../inhaltsstoffe" routerLinkActive="active" mat-button class="ingredients">
+          <i class="material-icons">biotech</i>
+          <span class="subtitle">Inhaltsstoffe</span>
+        </a>
+
+        <a routerLink="../kontakt" routerLinkActive="active" mat-button class="contact">
+          <i class="material-icons">account_circle</i>
+          <span class="subtitle">Kontakt</span>
+        </a>
+      </div>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </div>
+</div>

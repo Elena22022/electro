@@ -1,0 +1,39 @@
+@import "src/styles";
+
+.product-panel {
+  width: 100%;
+
+  .product-container {
+    margin: 50px 5% -100px;
+
+    .product-cluster {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .drink {
+        width: 25%;
+        margin-bottom: 150px;
+
+        .title {
+          display: flex;
+          flex-direction: row;
+
+          .icon {
+            width: 40px;
+            margin-right: 15px;
+          }
+        }
+
+        .pic {
+          height: 450px;
+        }
+
+        .price{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+

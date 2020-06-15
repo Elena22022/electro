@@ -1,0 +1,20 @@
+@import "src/styles";
+
+.carousel-panel {
+  width: 100%;
+
+  .carousel-background {
+    width: 100%;
+    background-color: rgba(0, 0, 0, .2);
+  }
+
+  .carousel-container {
+    margin: 40px auto 100px;
+    width: 45%;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+}

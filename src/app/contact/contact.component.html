@@ -1,0 +1,61 @@
+<div class="contact-panel">
+  <h2>Kontaktiere uns</h2>
+  <div class="contact-container">
+
+    <div class="contact">
+      <div class="contact-cluster">
+        <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="openDialog()">
+          <input type="text" formControlName="contactFormName" id="defaultContactFormVorame" mdbInput
+                 class="form-control" placeholder="Vorname">
+
+          <input type="text" formControlName="contactFormName" id="defaultContactFormName" mdbInput
+                 class="form-control" placeholder="Nachname">
+
+          <input type="email" formControlName="contactFormEmail" id="defaultContactFormEmail" mdbInput
+                 class="form-control" placeholder="E-Mail">
+
+          <div class="form-group">
+    <textarea formControlName="contactFormMessage" class="form-control" mdbInput id="exampleFormControlTextarea2"
+              rows="3" placeholder="Nachricht"></textarea>
+          </div>
+
+          <button mdbBtn color="info" outline="true" block="true" class="form-control form-button"
+                  mdbWavesEffect type="submit" [disabled]="disabledSubmitButton" (click)="openDialog()">Senden
+          </button>
+        </form>
+      </div>
+
+      <div class="maps">
+        <iframe class="maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.8601419722663!2d8.592669315694298!3d47.26125751976304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aa8c3e9d17fc5%3A0xd4d48bc55da582fc!2sBildungszentrum%20Z%C3%BCrichsee%20BZZ!5e1!3m2!1sde!2sch!4v1591736311904!5m2!1sde!2sch"></iframe>
+
+        <div class="contact-adress">
+          <div class="group">
+            <mdb-icon fas icon="building" size="2x"></mdb-icon>
+            <p>Electro</p>
+          </div>
+
+          <div class="group">
+            <mdb-icon fas icon="map-marked" size="2x"></mdb-icon>
+            <p class="address">Seestrasse 110<br>8810 Horgen<br>Schweiz</p>
+          </div>
+
+          <div class="group">
+            <a href="tel:+41582241877">
+              <mdb-icon fas icon="phone" size="2x"></mdb-icon>
+            </a>
+            <a class="a-text" href="tel:+41582241877">058 224 18 77</a>
+          </div>
+
+          <div class="group">
+            <a href="mailto:info@electro.ch">
+              <mdb-icon fas icon="envelope" size="2x"></mdb-icon>
+            </a>
+            <a class="a-text" href="mailto:info@electro.ch">info@electro.ch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,44 @@
+@import "src/styles";
+
+.footer-background {
+  clear: both;
+  position: relative;
+  height: 100px;
+  margin-top: 150px;
+  bottom: 0;
+  width: 100%;
+
+  .toolbar-footer {
+    height: 100px;
+    background-color: var(--main-title-color);
+    display: flex;
+    justify-content: space-between;
+
+    .label-footer {
+      float: left;
+
+      .electro_label_footer {
+        height: 65px;
+        margin: 0 8px;
+      }
+    }
+
+    .made-by {
+      margin-right: 5%;
+
+      .p1 {
+        float: left;
+      }
+
+      .p2 {
+        float: right;
+      }
+
+      .lightning {
+        height: 25px;
+        float: left;
+        margin: 5px 7.5px;
+      }
+    }
+  }
+}

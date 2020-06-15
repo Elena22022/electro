@@ -1,0 +1,88 @@
+@import "src/styles";
+
+.ingredients-panel {
+  width: 100%;
+
+  .ingredients-container {
+    margin: 50px 5%;
+
+    .ingredients-cluster {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .ingredients {
+        width: 45%;
+        margin-bottom: 125px;
+
+        .title {
+          display: flex;
+          flex-direction: row;
+
+          .icon {
+            width: 40px;
+            margin-right: 15px;
+          }
+        }
+
+        .ingredients-content {
+          display: flex;
+          flex-direction: row;
+
+          .pic {
+            height: 450px;
+            margin: 25px 0;
+          }
+
+          .ingredients-list {
+            list-style-type: none;
+            margin: 25px;
+            padding: 0;
+          }
+
+          .blueberry {
+            color: #2c4a9a;
+          }
+
+          .dragon-fruit {
+            color: #e52321;
+          }
+
+          .grapefruit {
+            color: #a6519a;
+          }
+
+          .mojito {
+            color: #40bee0;
+          }
+
+          .pikachu {
+            color: #D5CB00;
+          }
+
+          .pomegranate {
+            color: #a7c834;
+          }
+
+          .raspberry {
+            color: #ee07b4;
+          }
+
+          .tequila {
+            color: var(--main-title-color);
+          }
+
+          .tropical {
+            color: #dc8500;
+          }
+        }
+      }
+
+      .ingredients-tropical {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
